@@ -9,7 +9,7 @@ class Tweet:
         self.humidity = humidity
         self.wind = wind
 
-    def postTweet(city_name, temperature, clouds, humidity, wind):
+    def postTweet(country_name, city_name, temperature, clouds, humidity, wind):
         #Twitter tokens
         consumer_key = 'Sw0EPH1KUKT8hR6AcsRa6aO5c'
         consumer_secret = 'Bd5KHMfSeZ8EWXI5AMC3rcFSkP9oMJTNIX1h8Rq1LZnuujfnck'
@@ -31,5 +31,5 @@ class Tweet:
         access_token=access_token, 
         access_token_secret=access_token_secret
         )
-        weather_tweet = (city_name + 2*"\n" + temperature + "\n" + humidity + "\n" + clouds  + "\n" + wind)
+        weather_tweet = (city_name + " - " + country_name + 2*"\n" + temperature + "\n" + humidity + "\n" + clouds  + "\n" + wind)
         new_weather_tweet = Client.create_tweet(text= weather_tweet)
