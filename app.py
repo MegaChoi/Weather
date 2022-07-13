@@ -14,7 +14,7 @@ import time
 
 
 #fully automated program without needing the terminal input
-i = 0
+i = 6
 while i != 10:
     #get country info 
     try:

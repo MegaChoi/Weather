@@ -7,6 +7,13 @@ get
 - wind speed
 
 
+Some breadcrumb i got along the way
+- get tweet id from the home timeline : 
+
+tweets = api.home_timeline()
+for tweet in tweets:
+        print(tweet)
+
 TODO:
 Find a way to deal with the tweet being duplicated 
 
@@ -32,3 +39,14 @@ the world
 * The bot is now can post weather of capital cities in the world every 5 mins
 
 In the next Milestone, the bot must be able to reply to tweet requesting for weather info
+
+
+
+Project structure 
+
+data process :process location returns weather cons 
+mentionReply :search for mention and reply with data process
+
+app : post weather of capital every x mins
+postTweet : take weather cons and post them 
+testPy :
